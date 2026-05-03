@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idiom Listening Quiz</title>
+  <style>
+    /* ── Design tokens ── */
+    :root {
+      --bg:        #f8f7f4;
+      --surface:   #ffffff;
+      --navy:      #1a1a2e;
+      --blue:      #2c5f8a;
+      --blue-light:#e8f0f8;
+      --green:     #2d6a4f;
+      --green-bg:  #d8f3dc;
+      --red:       #7d2e2e;
+      --red-bg:    #fde8e8;
+      --muted:     #6b7280;
+      --border:    #e2e0db;
+      --radius:    12px;
+      --shadow:    0 2px 12px rgba(0,0,0,0.08);
+      --tap-min:   52px;
+    }
+
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--navy);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Layout shell ── */
+    #app {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .screen {
+      width: 100%;
+      max-width: 480px;
+      padding: 24px 20px 40px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Typography ── */
+    h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+    h2 { font-size: 1.15rem; font-weight: 600; }
+    p  { line-height: 1.6; }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: var(--tap-min);
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 12px 20px;
+      transition: opacity 0.15s, transform 0.1s;
+      width: 100%;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .btn:active { opacity: 0.8; transform: scale(0.98); }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: var(--blue-light);
+      color: var(--blue);
+      border: 1.5px solid var(--blue);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--muted);
+      border: 1.5px solid var(--border);
+    }
+    .btn-choice {
+      background: var(--surface);
+      color: var(--navy);
+      border: 1.5px solid var(--border);
+      text-align: left;
+      justify-content: flex-start;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    .btn-choice:hover { border-color: var(--blue); }
+
+    /* ── Set Selection ── */
+    .set-header {
+      margin-bottom: 28px;
+    }
+    .set-header h1 { margin-bottom: 6px; }
+    .set-header p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+    .set-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+    .btn-set {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      min-height: 54px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      transition: background 0.15s, border-color 0.15s;
+      padding: 6px 4px;
+    }
+    .btn-set:active { background: var(--blue-light); border-color: var(--blue); }
+    .btn-set span.set-num { font-size: 1rem; font-weight: 700; }
+    .btn-set span.set-range { font-size: 0.7rem; color: var(--muted); }
+
+    /* ── Quiz header ── */
+    .quiz-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .quiz-header .back-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 1.4rem;
+      padding: 4px;
+      line-height: 1;
+    }
+    .quiz-progress {
+      flex: 1;
+    }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    .progress-bar-track {
+      height: 6px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 99px;
+      transition: width 0.3s ease;
+    }
+
+    /* ── Listening screen ── */
+    .listening-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 20px 0;
+    }
+    .listening-icon {
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+
+    /* Pulsing dots animation */
+    .pulse-dots {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .pulse-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--blue);
+      animation: pulse-dot 1.4s ease-in-out infinite both;
+    }
+    .pulse-dots span:nth-child(1) { animation-delay: 0s; }
+    .pulse-dots span:nth-child(2) { animation-delay: 0.2s; }
+    .pulse-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes pulse-dot {
+      0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
+      40%           { opacity: 1;   transform: scale(1.2); }
+    }
+
+    .listening-label {
+      font-size: 1.1rem;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Answering screen ── */
+    .idiom-card {
+      margin-bottom: 24px;
+    }
+    .idiom-card .set-tag {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .idiom-card h1 {
+      font-size: 1.75rem;
+      color: var(--navy);
+    }
+
+    .choices {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .choice-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+
+    /* ── Feedback screen ── */
+    .result-banner {
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .result-banner.correct {
+      background: var(--green-bg);
+      color: var(--green);
+    }
+    .result-banner.wrong {
+      background: var(--red-bg);
+      color: var(--red);
+    }
+
+    .feedback-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .feedback-row {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+    }
+    .feedback-row .f-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .feedback-row .f-value {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--navy);
+    }
+    .feedback-row.literal {
+      box-shadow: none;
+      background: transparent;
+      border: 1px solid var(--border);
+    }
+    .feedback-row.literal .f-label,
+    .feedback-row.literal .f-value {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* ── Report screen ── */
+    .report-score-block {
+      text-align: center;
+      padding: 28px 20px;
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .score-fraction {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .score-percent {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .score-set-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .report-section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .wrong-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .wrong-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      box-shadow: var(--shadow);
+    }
+    .wrong-item-text {
+      flex: 1;
+    }
+    .wrong-item-text .wi-idiom {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .wrong-item-text .wi-meaning {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+    .play-btn {
+      background: var(--blue-light);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: var(--blue);
+      transition: background 0.15s;
+    }
+    .play-btn:active { background: var(--blue); color: #fff; }
+    .play-btn.playing { background: var(--blue); color: #fff; }
+
+    .report-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* ── All-correct message ── */
+    .all-correct {
+      text-align: center;
+      padding: 20px;
+      color: var(--green);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    /* ── Loading ── */
+    .loading {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+  // ── App state ──────────────────────────────────────────────────────────────
+  const state = {
+    screen: 'loading',      // loading | set-selection | listening | answering | feedback | report
+    allIdioms: [],
+    audioManifest: {},
+    currentSet: null,       // 1–25
+    setIdioms: [],          // 10 items for current set
+    currentIndex: 0,        // 0–9
+    score: 0,
+    wrongItems: [],         // { idiom, choices, correctIndex, japanese, explanation, literal, id }
+    selectedIndex: null,    // user's answer
+    audio: null,            // current Audio object
+    reportAudio: null,      // audio playing in report screen
+    reportPlayingId: null,  // id of idiom currently playing in report
+  };
+
+  // ── Boot ───────────────────────────────────────────────────────────────────
+  async function boot() {
+    render();
+    try {
+      const [idiomsRes, manifestRes] = await Promise.all([
+        fetch('idioms_quiz.json'),
+        fetch('audio_manifest.json'),
+      ]);
+      state.allIdioms    = await idiomsRes.json();
+      state.audioManifest = await manifestRes.json();
+      state.screen = 'set-selection';
+    } catch (e) {
+      document.getElementById('app').innerHTML =
+        '<div class="screen"><div class="loading">Failed to load data. Please serve via HTTP (python3 -m http.server 8000).</div></div>';
+      return;
+    }
+    render();
+  }
+
+  // ── Set helpers ────────────────────────────────────────────────────────────
+  function setNumber(id) {
+    return Math.ceil(parseInt(id, 10) / 10);
+  }
+
+  function idiomsForSet(n) {
+    return state.allIdioms.filter(item => setNumber(item.id) === n);
+  }
+
+  function setRange(n) {
+    const start = (n - 1) * 10 + 1;
+    return `${String(start).padStart(3,'0')}–${String(start + 9).padStart(3,'0')}`;
+  }
+
+  // ── Audio helpers ──────────────────────────────────────────────────────────
+  function stopCurrentAudio() {
+    if (state.audio) {
+      state.audio.pause();
+      state.audio = null;
+    }
+  }
+
+  function stopReportAudio() {
+    if (state.reportAudio) {
+      state.reportAudio.pause();
+      state.reportAudio = null;
+    }
+    state.reportPlayingId = null;
+  }
+
+  function playQuestionAudio(item) {
+    stopCurrentAudio();
+    const path = state.audioManifest[item.id];
+    if (!path) {
+      // No audio file — skip directly to answering
+      state.screen = 'answering';
+      render();
+      return;
+    }
+    const audio = new Audio(path);
+    state.audio = audio;
+    audio.addEventListener('ended', () => {
+      state.screen = 'answering';
+      render();
+    });
+    audio.play().catch(() => {
+      // Playback failed (e.g., missing file) — go straight to answering
+      state.screen = 'answering';
+      render();
+    });
+  }
+
+  // ── Navigation actions ─────────────────────────────────────────────────────
+  function startSet(n) {
+    stopCurrentAudio();
+    stopReportAudio();
+    state.currentSet   = n;
+    state.setIdioms    = idiomsForSet(n);
+    state.currentIndex = 0;
+    state.score        = 0;
+    state.wrongItems   = [];
+    state.screen       = 'listening';
+    render();
+    playQuestionAudio(state.setIdioms[0]);
+  }
+
+  function submitAnswer(choiceIndex) {
+    const item = state.setIdioms[state.currentIndex];
+    state.selectedIndex = choiceIndex;
+    const correct = choiceIndex === item.correctIndex;
+    playSfx(correct ? 'correct' : 'wrong');
+    if (correct) {
+      state.score++;
+    } else {
+      state.wrongItems.push(item);
+    }
+    state.screen = 'feedback';
+    render();
+  }
+
+  function nextQuestion() {
+    stopCurrentAudio();
+    const nextIndex = state.currentIndex + 1;
+    if (nextIndex >= state.setIdioms.length) {
+      state.screen = 'report';
+      render();
+      return;
+    }
+    state.currentIndex = nextIndex;
+    state.selectedIndex = null;
+    state.screen = 'listening';
+    render();
+    playQuestionAudio(state.setIdioms[nextIndex]);
+  }
+
+  function retrySet() {
+    startSet(state.currentSet);
+  }
+
+  function nextSet() {
+    const next = state.currentSet < 25 ? state.currentSet + 1 : 1;
+    startSet(next);
+  }
+
+  function backToSetList() {
+    stopCurrentAudio();
+    stopReportAudio();
+    state.screen = 'set-selection';
+    render();
+  }
+
+  function toggleReportAudio(item) {
+    const path = state.audioManifest[item.id];
+    if (!path) return;
+
+    if (state.reportPlayingId === item.id) {
+      stopReportAudio();
+      render();
+      return;
+    }
+
+    stopReportAudio();
+    const audio = new Audio(path);
+    state.reportAudio     = audio;
+    state.reportPlayingId = item.id;
+    render();
+    audio.addEventListener('ended', () => {
+      state.reportPlayingId = null;
+      state.reportAudio = null;
+      render();
+    });
+    audio.play().catch(() => {
+      state.reportPlayingId = null;
+      state.reportAudio = null;
+      render();
+    });
+  }
+
+  // ── Render ─────────────────────────────────────────────────────────────────
+  function render() {
+    const app = document.getElementById('app');
+    switch (state.screen) {
+      case 'loading':        app.innerHTML = renderLoading();       break;
+      case 'set-selection':  app.innerHTML = renderSetSelection();  break;
+      case 'listening':      app.innerHTML = renderListening();     break;
+      case 'answering':      app.innerHTML = renderAnswering();     break;
+      case 'feedback':       app.innerHTML = renderFeedback();      break;
+      case 'report':         app.innerHTML = renderReport();        break;
+    }
+    bindEvents();
+  }
+
+  // ── Screen renderers ───────────────────────────────────────────────────────
+
+  function renderLoading() {
+    return `<div class="screen"><div class="loading">Loading...</div></div>`;
+  }
+
+  function renderSetSelection() {
+    const sets = Array.from({ length: 25 }, (_, i) => i + 1);
+    const buttons = sets.map(n => `
+      <button class="btn-set" data-action="start-set" data-set="${n}">
+        <span class="set-num">Set ${n}</span>
+        <span class="set-range">${setRange(n)}</span>
+      </button>
+    `).join('');
+
+    return `
+      <div class="screen">
+        <div class="set-header">
+          <h1>Listen & Learn Idioms 01</h1>
+          <p class="subtitle">Train your ear. Understand idioms.</p>
+        </div>
+        <div class="set-grid">${buttons}</div>
+      </div>
+    `;
+  }
+
+  function renderListening() {
+    const item = state.setIdioms[state.currentIndex];
+    const progress = ((state.currentIndex) / state.setIdioms.length) * 100;
+
+    return `
+      <div class="screen">
+        ${renderQuizHeader(progress)}
+        <div class="listening-body">
+          <div class="listening-icon">🔊</div>
+          <div class="pulse-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="listening-label">Listening...</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderAnswering() {
+    const item = state.setIdioms[state.currentIndex];
+    const progress = ((state.currentIndex) / state.setIdioms.length) * 100;
+
+    const choices = item.choices.map((text, i) => `
+      <button class="btn btn-choice" data-action="answer" data-index="${i}">
+        ${escHtml(text)}
+      </button>
+    `).join('');
+
+    return `
+      <div class="screen">
+        ${renderQuizHeader(progress)}
+        <div class="card idiom-card">
+          <div class="set-tag">Set ${state.currentSet} &middot; ${state.currentIndex + 1} / ${state.setIdioms.length}</div>
+          <h1>${escHtml(item.idiom)}</h1>
+        </div>
+        <div style="height:20px"></div>
+        <div class="choice-label">What does this idiom mean?</div>
+        <div class="choices">${choices}</div>
+      </div>
+    `;
+  }
+
+  function renderFeedback() {
+    const item = state.setIdioms[state.currentIndex];
+    const correct = state.selectedIndex === item.correctIndex;
+    const progress = ((state.currentIndex + 1) / state.setIdioms.length) * 100;
+    const isLast = state.currentIndex === state.setIdioms.length - 1;
+
+    return `
+      <div class="screen">
+        ${renderQuizHeader(progress)}
+
+        <div class="result-banner ${correct ? 'correct' : 'wrong'}">
+          ${correct ? '✓ Correct' : '✗ Not quite'}
+        </div>
+
+        <div class="feedback-cards">
+          <div class="feedback-row">
+            <div class="f-label">Correct meaning</div>
+            <div class="f-value">${escHtml(item.choices[item.correctIndex])}</div>
+          </div>
+          <div class="feedback-row">
+            <div class="f-label">Japanese</div>
+            <div class="f-value">${escHtml(item.japanese)}</div>
+          </div>
+          <div class="feedback-row">
+            <div class="f-label">Explanation</div>
+            <div class="f-value">${escHtml(item.explanation)}</div>
+          </div>
+          <div class="feedback-row literal">
+            <div class="f-label">Literal meaning</div>
+            <div class="f-value">${escHtml(item.literal)}</div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" data-action="next">
+          ${isLast ? 'See Results' : 'Next →'}
+        </button>
+      </div>
+    `;
+  }
+
+  function renderReport() {
+    const total   = state.setIdioms.length;
+    const score   = state.score;
+    const pct     = Math.round((score / total) * 100);
+    const wrong   = state.wrongItems;
+
+    const wrongSection = wrong.length === 0
+      ? `<div class="all-correct">Perfect score — no incorrect answers!</div>`
+      : `
+        <div class="report-section-label">Review incorrect answers</div>
+        <div class="wrong-list">
+          ${wrong.map(item => `
+            <div class="wrong-item">
+              <div class="wrong-item-text">
+                <div class="wi-idiom">${escHtml(item.idiom)}</div>
+                <div class="wi-meaning">${escHtml(item.choices[item.correctIndex])}</div>
+              </div>
+              <button class="play-btn ${state.reportPlayingId === item.id ? 'playing' : ''}"
+                      data-action="report-play" data-id="${item.id}"
+                      title="Play audio">
+                ${state.reportPlayingId === item.id ? '■' : '▶'}
+              </button>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+    const nextSetNum = state.currentSet < 25 ? state.currentSet + 1 : 1;
+
+    return `
+      <div class="screen">
+        <div class="report-score-block">
+          <div class="score-fraction">${score} / ${total}</div>
+          <div class="score-percent">${pct}%</div>
+          <div class="score-set-label">Set ${state.currentSet}</div>
+        </div>
+
+        ${wrongSection}
+
+        <div class="report-actions">
+          <button class="btn btn-primary"    data-action="retry-set">Retry Set ${state.currentSet}</button>
+          <button class="btn btn-secondary"  data-action="next-set">Next Set (Set ${nextSetNum})</button>
+          <button class="btn btn-ghost"      data-action="back-to-list">← Back to Set List</button>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderQuizHeader(progressPct) {
+    return `
+      <div class="quiz-header">
+        <button class="back-btn" data-action="back-to-list" title="Back to set list">‹</button>
+        <div class="quiz-progress">
+          <div class="progress-label">Set ${state.currentSet}</div>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" style="width:${progressPct}%"></div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // ── Event binding (event delegation) ──────────────────────────────────────
+  function bindEvents() {
+    document.getElementById('app').addEventListener('click', handleClick, { once: true });
+  }
+
+  function handleClick(e) {
+    const target = e.target.closest('[data-action]');
+    if (!target) { bindEvents(); return; }
+
+    const action = target.dataset.action;
+
+    switch (action) {
+      case 'start-set':
+        startSet(parseInt(target.dataset.set, 10));
+        break;
+      case 'answer':
+        submitAnswer(parseInt(target.dataset.index, 10));
+        break;
+      case 'next':
+        nextQuestion();
+        break;
+      case 'retry-set':
+        retrySet();
+        break;
+      case 'next-set':
+        nextSet();
+        break;
+      case 'back-to-list':
+        backToSetList();
+        break;
+      case 'report-play': {
+        const id   = target.dataset.id;
+        const item = state.wrongItems.find(x => x.id === id);
+        if (item) toggleReportAudio(item);
+        break;
+      }
+      default:
+        bindEvents();
+    }
+  }
+
+  // ── Sound effects (Web Audio API) ─────────────────────────────────────────
+  let _sfxCtx = null;
+
+  function getSfxContext() {
+    if (!_sfxCtx) {
+      _sfxCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (_sfxCtx.state === 'suspended') {
+      _sfxCtx.resume();
+    }
+    return _sfxCtx;
+  }
+
+  function playSfx(type) {
+    try {
+      const ctx = getSfxContext();
+      const t   = ctx.currentTime;
+
+      if (type === 'correct') {
+        // Two-note ascending chime: C5 then G5
+        const playNote = (freq, start, dur) => {
+          const osc  = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.type = 'sine';
+          osc.frequency.value = freq;
+          gain.gain.setValueAtTime(0, start);
+          gain.gain.linearRampToValueAtTime(0.25, start + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.001, start + dur);
+          osc.start(start);
+          osc.stop(start + dur);
+        };
+        playNote(523, t,        0.28);   // C5
+        playNote(784, t + 0.12, 0.28);   // G5
+      } else {
+        // Soft descending tone: 280 Hz → 160 Hz
+        const osc  = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(280, t);
+        osc.frequency.linearRampToValueAtTime(160, t + 0.35);
+        gain.gain.setValueAtTime(0, t);
+        gain.gain.linearRampToValueAtTime(0.2, t + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.42);
+        osc.start(t);
+        osc.stop(t + 0.42);
+      }
+    } catch (_) {
+      // Web Audio not supported — fail silently
+    }
+  }
+
+  // ── Utility ────────────────────────────────────────────────────────────────
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── Start ──────────────────────────────────────────────────────────────────
+  boot();
+</script>
+</body>
+</html>
