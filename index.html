@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,11 +52,11 @@
 
     /* ── Typography ── */
     h1 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-}
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
     h2 { font-size: 1.15rem; font-weight: 600; }
     p  { line-height: 1.6; }
 
@@ -118,11 +118,11 @@
     }
     .set-header h1 { margin-bottom: 6px; }
     .set-header p {
-  color: var(--muted);
-  font-size: 0.95rem;
-  margin-top: 4px;
-  letter-spacing: 0.02em;
-}
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 4px;
+      letter-spacing: 0.02em;
+    }
 
     .set-grid {
       display: grid;
@@ -447,7 +447,7 @@
         fetch('idioms_quiz.json'),
         fetch('audio_manifest.json'),
       ]);
-      state.allIdioms    = await idiomsRes.json();
+      state.allIdioms     = await idiomsRes.json();
       state.audioManifest = await manifestRes.json();
       state.screen = 'set-selection';
     } catch (e) {
@@ -469,7 +469,7 @@
 
   function setRange(n) {
     const start = (n - 1) * 10 + 1;
-    return `${String(start).padStart(3,'0')}–${String(start + 9).padStart(3,'0')}`;
+    return `${String(start).padStart(3, '0')}–${String(start + 9).padStart(3, '0')}`;
   }
 
   // ── Audio helpers ──────────────────────────────────────────────────────────
@@ -492,7 +492,6 @@
     stopCurrentAudio();
     const path = state.audioManifest[item.id];
     if (!path) {
-      // No audio file — skip directly to answering
       state.screen = 'answering';
       render();
       return;
@@ -504,7 +503,6 @@
       render();
     });
     audio.play().catch(() => {
-      // Playback failed (e.g., missing file) — go straight to answering
       state.screen = 'answering';
       render();
     });
@@ -546,40 +544,25 @@
       render();
       return;
     }
-    state.currentIndex = nextIndex;
+    state.currentIndex  = nextIndex;
     state.selectedIndex = null;
-    state.screen = 'listening';
+    state.screen        = 'listening';
     render();
     playQuestionAudio(state.setIdioms[nextIndex]);
   }
-  
-  function nextQuestion() {
-  stopCurrentAudio();
-  const nextIndex = state.currentIndex + 1;
-  if (nextIndex >= state.setIdioms.length) {
-    state.screen = 'report';
-    render();
-    return;
-  }
-  state.currentIndex = nextIndex;
-  state.selectedIndex = null;
-  state.screen = 'listening';
-  render();
-  playQuestionAudio(state.setIdioms[nextIndex]);
-}
 
-/* 👇 PASTE HERE (outside the function) */
-function prevQuestion() {
-  if (state.currentIndex === 0) {
-    state.screen = 'set-selection';
+  function prevQuestion() {
+    stopCurrentAudio();
+    if (state.currentIndex === 0) {
+      state.screen = 'set-selection';
+      render();
+      return;
+    }
+    state.currentIndex--;
+    state.selectedIndex = null;
+    state.screen        = 'answering';
     render();
-    return;
   }
-
-  state.currentIndex--;
-  state.screen = 'answering';
-  render();
-}
 
   function retrySet() {
     startSet(state.currentSet);
@@ -614,12 +597,12 @@ function prevQuestion() {
     render();
     audio.addEventListener('ended', () => {
       state.reportPlayingId = null;
-      state.reportAudio = null;
+      state.reportAudio     = null;
       render();
     });
     audio.play().catch(() => {
       state.reportPlayingId = null;
-      state.reportAudio = null;
+      state.reportAudio     = null;
       render();
     });
   }
@@ -628,18 +611,17 @@ function prevQuestion() {
   function render() {
     const app = document.getElementById('app');
     switch (state.screen) {
-      case 'loading':        app.innerHTML = renderLoading();       break;
-      case 'set-selection':  app.innerHTML = renderSetSelection();  break;
-      case 'listening':      app.innerHTML = renderListening();     break;
-      case 'answering':      app.innerHTML = renderAnswering();     break;
-      case 'feedback':       app.innerHTML = renderFeedback();      break;
-      case 'report':         app.innerHTML = renderReport();        break;
+      case 'loading':       app.innerHTML = renderLoading();      break;
+      case 'set-selection': app.innerHTML = renderSetSelection(); break;
+      case 'listening':     app.innerHTML = renderListening();    break;
+      case 'answering':     app.innerHTML = renderAnswering();    break;
+      case 'feedback':      app.innerHTML = renderFeedback();     break;
+      case 'report':        app.innerHTML = renderReport();       break;
     }
     bindEvents();
   }
 
   // ── Screen renderers ───────────────────────────────────────────────────────
-
   function renderLoading() {
     return `<div class="screen"><div class="loading">Loading...</div></div>`;
   }
@@ -656,7 +638,7 @@ function prevQuestion() {
     return `
       <div class="screen">
         <div class="set-header">
-          <h1>Listen & Learn Idioms 01</h1>
+          <h1>Listen &amp; Learn Idioms 01</h1>
           <p class="subtitle">Train your ear. Understand idioms.</p>
         </div>
         <div class="set-grid">${buttons}</div>
@@ -665,8 +647,7 @@ function prevQuestion() {
   }
 
   function renderListening() {
-    const item = state.setIdioms[state.currentIndex];
-    const progress = ((state.currentIndex) / state.setIdioms.length) * 100;
+    const progress = (state.currentIndex / state.setIdioms.length) * 100;
 
     return `
       <div class="screen">
@@ -684,7 +665,7 @@ function prevQuestion() {
 
   function renderAnswering() {
     const item = state.setIdioms[state.currentIndex];
-    const progress = ((state.currentIndex) / state.setIdioms.length) * 100;
+    const progress = (state.currentIndex / state.setIdioms.length) * 100;
 
     const choices = item.choices.map((text, i) => `
       <button class="btn btn-choice" data-action="answer" data-index="${i}">
@@ -702,15 +683,18 @@ function prevQuestion() {
         <div style="height:20px"></div>
         <div class="choice-label">What does this idiom mean?</div>
         <div class="choices">${choices}</div>
+        <div style="margin-top:16px;">
+          <button class="btn btn-ghost" data-action="prev">← Previous</button>
+        </div>
       </div>
     `;
   }
 
   function renderFeedback() {
-    const item = state.setIdioms[state.currentIndex];
+    const item    = state.setIdioms[state.currentIndex];
     const correct = state.selectedIndex === item.correctIndex;
     const progress = ((state.currentIndex + 1) / state.setIdioms.length) * 100;
-    const isLast = state.currentIndex === state.setIdioms.length - 1;
+    const isLast   = state.currentIndex === state.setIdioms.length - 1;
 
     return `
       <div class="screen">
@@ -747,10 +731,10 @@ function prevQuestion() {
   }
 
   function renderReport() {
-    const total   = state.setIdioms.length;
-    const score   = state.score;
-    const pct     = Math.round((score / total) * 100);
-    const wrong   = state.wrongItems;
+    const total = state.setIdioms.length;
+    const score = state.score;
+    const pct   = Math.round((score / total) * 100);
+    const wrong = state.wrongItems;
 
     const wrongSection = wrong.length === 0
       ? `<div class="all-correct">Perfect score — no incorrect answers!</div>`
@@ -786,9 +770,9 @@ function prevQuestion() {
         ${wrongSection}
 
         <div class="report-actions">
-          <button class="btn btn-primary"    data-action="retry-set">Retry Set ${state.currentSet}</button>
-          <button class="btn btn-secondary"  data-action="next-set">Next Set (Set ${nextSetNum})</button>
-          <button class="btn btn-ghost"      data-action="back-to-list">← Back to Set List</button>
+          <button class="btn btn-primary"   data-action="retry-set">Retry Set ${state.currentSet}</button>
+          <button class="btn btn-secondary" data-action="next-set">Next Set (Set ${nextSetNum})</button>
+          <button class="btn btn-ghost"     data-action="back-to-list">← Back to Set List</button>
         </div>
       </div>
     `;
@@ -829,6 +813,9 @@ function prevQuestion() {
       case 'next':
         nextQuestion();
         break;
+      case 'prev':
+        prevQuestion();
+        break;
       case 'retry-set':
         retrySet();
         break;
@@ -868,7 +855,6 @@ function prevQuestion() {
       const t   = ctx.currentTime;
 
       if (type === 'correct') {
-        // Two-note ascending chime: C5 then G5
         const playNote = (freq, start, dur) => {
           const osc  = ctx.createOscillator();
           const gain = ctx.createGain();
@@ -885,7 +871,6 @@ function prevQuestion() {
         playNote(523, t,        0.28);   // C5
         playNote(784, t + 0.12, 0.28);   // G5
       } else {
-        // Soft descending tone: 280 Hz → 160 Hz
         const osc  = ctx.createOscillator();
         const gain = ctx.createGain();
         osc.connect(gain);
