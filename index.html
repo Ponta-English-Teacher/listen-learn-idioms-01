@@ -552,6 +552,34 @@
     render();
     playQuestionAudio(state.setIdioms[nextIndex]);
   }
+  
+  function nextQuestion() {
+  stopCurrentAudio();
+  const nextIndex = state.currentIndex + 1;
+  if (nextIndex >= state.setIdioms.length) {
+    state.screen = 'report';
+    render();
+    return;
+  }
+  state.currentIndex = nextIndex;
+  state.selectedIndex = null;
+  state.screen = 'listening';
+  render();
+  playQuestionAudio(state.setIdioms[nextIndex]);
+}
+
+/* 👇 PASTE HERE (outside the function) */
+function prevQuestion() {
+  if (state.currentIndex === 0) {
+    state.screen = 'set-selection';
+    render();
+    return;
+  }
+
+  state.currentIndex--;
+  state.screen = 'answering';
+  render();
+}
 
   function retrySet() {
     startSet(state.currentSet);
