@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -283,6 +283,13 @@
       flex-direction: column;
       gap: 12px;
       margin-bottom: 24px;
+    }
+
+    /* ── Feedback nav (Prev + Next row) ── */
+    .feedback-nav {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
     }
     .feedback-row {
       background: var(--surface);
@@ -683,9 +690,6 @@
         <div style="height:20px"></div>
         <div class="choice-label">What does this idiom mean?</div>
         <div class="choices">${choices}</div>
-        <div style="margin-top:16px;">
-          <button class="btn btn-ghost" data-action="prev">← Previous</button>
-        </div>
       </div>
     `;
   }
@@ -723,9 +727,12 @@
           </div>
         </div>
 
-        <button class="btn btn-primary" data-action="next">
-          ${isLast ? 'See Results' : 'Next →'}
-        </button>
+        <div class="feedback-nav">
+          <button class="btn btn-ghost" data-action="prev">← Previous</button>
+          <button class="btn btn-primary" data-action="next">
+            ${isLast ? 'See Results' : 'Next →'}
+          </button>
+        </div>
       </div>
     `;
   }
