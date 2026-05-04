@@ -261,6 +261,36 @@
     }
 
     /* ── Feedback screen ── */
+    .feedback-idiom-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .feedback-idiom-row .fi-text {
+      flex: 1;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--navy);
+    }
+    .btn-play-again {
+      background: var(--blue-light);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--blue);
+      transition: background 0.15s;
+    }
+    .btn-play-again:active { background: var(--blue); color: #fff; }
+
     .result-banner {
       border-radius: var(--radius);
       padding: 14px 20px;
@@ -309,6 +339,17 @@
       line-height: 1.6;
       color: var(--navy);
     }
+    .correct-answer {
+      color: var(--green);
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .wrong-answer {
+      color: var(--red);
+      text-decoration: line-through;
+    }
+    
     .feedback-row.literal {
       box-shadow: none;
       background: transparent;
@@ -515,6 +556,17 @@
     });
   }
 
+  function replayCurrentAudio() {
+    stopCurrentAudio();
+    const item = state.setIdioms[state.currentIndex];
+    const path = state.audioManifest[item.id];
+    if (!path) return;
+    const audio = new Audio(path);
+    state.audio = audio;
+    audio.play().catch(() => {});
+    // No 'ended' listener — screen stays on feedback
+  }
+
   // ── Navigation actions ─────────────────────────────────────────────────────
   function startSet(n) {
     stopCurrentAudio();
@@ -685,7 +737,7 @@
         ${renderQuizHeader(progress)}
         <div class="card idiom-card">
           <div class="set-tag">Set ${state.currentSet} &middot; ${state.currentIndex + 1} / ${state.setIdioms.length}</div>
-          <h1>${escHtml(item.idiom)}</h1>
+          <h1>${escHtml(lowerIdiom(item.idiom))}</h1>
         </div>
         <div style="height:20px"></div>
         <div class="choice-label">What does this idiom mean?</div>
@@ -704,29 +756,53 @@
       <div class="screen">
         ${renderQuizHeader(progress)}
 
+        <div class="feedback-idiom-row">
+          <div class="fi-text">${escHtml(lowerIdiom(item.idiom))}</div>
+          <button class="btn-play-again" data-action="play-again" title="Play audio again">▶</button>
+        </div>
+
         <div class="result-banner ${correct ? 'correct' : 'wrong'}">
           ${correct ? '✓ Correct' : '✗ Not quite'}
         </div>
 
-        <div class="feedback-cards">
-          <div class="feedback-row">
-            <div class="f-label">Correct meaning</div>
-            <div class="f-value">${escHtml(item.choices[item.correctIndex])}</div>
-          </div>
-          <div class="feedback-row">
-            <div class="f-label">Japanese</div>
-            <div class="f-value">${escHtml(item.japanese)}</div>
-          </div>
-          <div class="feedback-row">
-            <div class="f-label">Explanation</div>
-            <div class="f-value">${escHtml(item.explanation)}</div>
-          </div>
-          <div class="feedback-row literal">
-            <div class="f-label">Literal meaning</div>
-            <div class="f-value">${escHtml(item.literal)}</div>
-          </div>
-        </div>
+       <div class="feedback-cards">
 
+  <div class="feedback-row">
+    <div class="f-label">Correct meaning</div>
+    <div class="f-value correct-answer">
+      ${escHtml(item.choices[item.correctIndex])}
+    </div>
+  </div>
+
+  ${
+    state.selectedIndex !== item.correctIndex
+      ? `
+      <div class="feedback-row">
+        <div class="f-label">Your answer</div>
+        <div class="f-value wrong-answer">
+          ${escHtml(item.choices[state.selectedIndex])}
+        </div>
+      </div>
+      `
+      : ''
+  }
+
+  <div class="feedback-row">
+    <div class="f-label">Japanese</div>
+    <div class="f-value">${escHtml(item.japanese)}</div>
+  </div>
+
+  <div class="feedback-row">
+    <div class="f-label">Explanation</div>
+    <div class="f-value">${escHtml(item.explanation)}</div>
+  </div>
+
+  <div class="feedback-row literal">
+    <div class="f-label">Literal meaning</div>
+    <div class="f-value">${escHtml(item.literal)}</div>
+  </div>
+
+</div>
         <div class="feedback-nav">
           <button class="btn btn-ghost" data-action="prev">← Previous</button>
           <button class="btn btn-primary" data-action="next">
@@ -751,7 +827,7 @@
           ${wrong.map(item => `
             <div class="wrong-item">
               <div class="wrong-item-text">
-                <div class="wi-idiom">${escHtml(item.idiom)}</div>
+                <div class="wi-idiom">${escHtml(lowerIdiom(item.idiom))}</div>
                 <div class="wi-meaning">${escHtml(item.choices[item.correctIndex])}</div>
               </div>
               <button class="play-btn ${state.reportPlayingId === item.id ? 'playing' : ''}"
@@ -822,6 +898,10 @@
         break;
       case 'prev':
         prevQuestion();
+        break;
+      case 'play-again':
+        replayCurrentAudio();
+        bindEvents();
         break;
       case 'retry-set':
         retrySet();
@@ -897,6 +977,10 @@
   }
 
   // ── Utility ────────────────────────────────────────────────────────────────
+  function lowerIdiom(str) {
+    return String(str).toLowerCase();
+  }
+
   function escHtml(str) {
     return String(str)
       .replace(/&/g, '&amp;')
