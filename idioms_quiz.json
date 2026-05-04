@@ -39,10 +39,10 @@
     "id": "004",
     "idiom": "All Ears",
     "choices": [
-      "ready and eager to listen",
-      "paying close attention to many things at once"
+      "paying close attention to many things at once",
+      "ready and eager to listen"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "全部耳",
     "japanese": "じっくり聞く準備ができている",
     "explanation": "Said when you are fully attentive and ready to hear what someone has to say."
@@ -63,10 +63,10 @@
     "id": "006",
     "idiom": "At All Costs",
     "choices": [
-      "no matter what it takes",
-      "while keeping expenses low"
+      "while keeping expenses low",
+      "no matter what it takes"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "どんな代価を払っても",
     "japanese": "何がなんでも、どんな犠牲を払っても",
     "explanation": "Means you will do something regardless of the effort or sacrifice required."
@@ -87,10 +87,10 @@
     "id": "008",
     "idiom": "Bark Up the Wrong Tree",
     "choices": [
-      "pursue the wrong person or solution",
-      "make noise without achieving results"
+      "make noise without achieving results",
+      "pursue the wrong person or solution"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "間違った木に吠える",
     "japanese": "見当違いのことをする、的外れな追及をする",
     "explanation": "Means you are directing your efforts or blame at the wrong target."
@@ -99,10 +99,10 @@
     "id": "009",
     "idiom": "Beat Around the Bush",
     "choices": [
-      "avoid getting to the main point",
-      "take a slow and careful approach to a problem"
+      "take a slow and careful approach to a problem",
+      "avoid getting to the main point"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "茂みの周りを叩く",
     "japanese": "遠回しに言う、要点を避ける",
     "explanation": "Describes talking around a topic without directly addressing it."
@@ -111,10 +111,10 @@
     "id": "010",
     "idiom": "Bend Over Backwards",
     "choices": [
-      "try extremely hard to help or please someone",
-      "make an uncomfortable compromise"
+      "make an uncomfortable compromise",
+      "try extremely hard to help or please someone"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "後ろに体を曲げる",
     "japanese": "人のために懸命に努力する、無理をして尽くす",
     "explanation": "Means to make a great effort to accommodate or assist someone."
@@ -135,10 +135,10 @@
     "id": "012",
     "idiom": "Break the Ice",
     "choices": [
-      "reduce tension and start a conversation",
-      "be the first to raise a difficult topic"
+      "be the first to raise a difficult topic",
+      "reduce tension and start a conversation"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "氷を割る",
     "japanese": "場の緊張をほぐす、会話のきっかけを作る",
     "explanation": "Means to do or say something to make people feel more comfortable in a social situation."
@@ -159,10 +159,10 @@
     "id": "014",
     "idiom": "Call It a Day",
     "choices": [
-      "stop working for the day",
-      "declare a project finished"
+      "declare a project finished",
+      "stop working for the day"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "それを一日と呼ぶ",
     "japanese": "今日はここまでにする、仕事を切り上げる",
     "explanation": "Means to decide to stop an activity for the rest of the day."
@@ -171,10 +171,10 @@
     "id": "015",
     "idiom": "Catch Someone Off Guard",
     "choices": [
-      "surprise someone when they are unprepared",
-      "notice someone making a mistake"
+      "notice someone making a mistake",
+      "surprise someone when they are unprepared"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "誰かの警戒を捕まえる",
     "japanese": "不意をつく、油断しているところを突く",
     "explanation": "Means to surprise someone at a moment when they are not ready or expecting it."
@@ -195,10 +195,10 @@
     "id": "017",
     "idiom": "Cost an Arm and a Leg",
     "choices": [
-      "be extremely expensive",
-      "require a lot of time and energy"
+      "require a lot of time and energy",
+      "be extremely expensive"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "腕と脚の値段がする",
     "japanese": "非常に高価である、法外な値段がする",
     "explanation": "Describes something that costs a very large amount of money."
@@ -207,10 +207,10 @@
     "id": "018",
     "idiom": "Cut Corners",
     "choices": [
-      "do something poorly to save time or money",
-      "find a more efficient way to complete a task"
+      "find a more efficient way to complete a task",
+      "do something poorly to save time or money"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "角を切る",
     "japanese": "手を抜く、近道をして質を落とす",
     "explanation": "Means to do a job with less care or effort than is required."
@@ -231,10 +231,10 @@
     "id": "020",
     "idiom": "Do Someone a Favor",
     "choices": [
-      "do something helpful for someone",
-      "return something owed to someone"
+      "return something owed to someone",
+      "do something helpful for someone"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "誰かに恩恵をする",
     "japanese": "人の頼みを聞く、親切にしてあげる",
     "explanation": "Means to do a helpful or kind act for another person."
@@ -267,10 +267,10 @@
     "id": "023",
     "idiom": "Easy Does It",
     "choices": [
-      "do something slowly and carefully",
-      "stop worrying and just try it"
+      "stop worrying and just try it",
+      "do something slowly and carefully"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "簡単にやれ",
     "japanese": "落ち着いてゆっくりやれ、慌てずに",
     "explanation": "Used to tell someone to proceed gently or without rushing."
@@ -303,10 +303,10 @@
     "id": "026",
     "idiom": "Feel Under the Weather",
     "choices": [
-      "feel slightly sick or unwell",
-      "feel overwhelmed by stress or pressure"
+      "feel overwhelmed by stress or pressure",
+      "feel slightly sick or unwell"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "天気の下にいる",
     "japanese": "体の具合が悪い、気分がすぐれない",
     "explanation": "Describes feeling ill or not in good physical condition."
@@ -315,10 +315,10 @@
     "id": "027",
     "idiom": "Figure Something Out",
     "choices": [
-      "find a solution or understand something",
-      "make a plan for handling something"
+      "make a plan for handling something",
+      "find a solution or understand something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "何かを解明する",
     "japanese": "解決策を見つける、理解する",
     "explanation": "Means to discover an answer or work out how to deal with something."
@@ -327,10 +327,10 @@
     "id": "028",
     "idiom": "Find Common Ground",
     "choices": [
-      "discover shared interests or agreements",
-      "avoid disagreement by changing the topic"
+      "avoid disagreement by changing the topic",
+      "discover shared interests or agreements"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "共通の土台を見つける",
     "japanese": "共通点を見つける、意見が一致する点を探す",
     "explanation": "Means to identify areas of agreement between people with differing views."
@@ -339,10 +339,10 @@
     "id": "029",
     "idiom": "Get Cold Feet",
     "choices": [
-      "become nervous and hesitate to do something",
-      "lose interest in a plan you once liked"
+      "lose interest in a plan you once liked",
+      "become nervous and hesitate to do something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "足が冷たくなる",
     "japanese": "尻込みする、怖気づく",
     "explanation": "Means to suddenly feel afraid or uncertain about doing something you planned."
@@ -387,10 +387,10 @@
     "id": "033",
     "idiom": "Go the Extra Mile",
     "choices": [
-      "make more effort than is required",
-      "continue doing something longer than necessary without purpose"
+      "continue doing something longer than necessary without purpose",
+      "make more effort than is required"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "一マイル余分に行く",
     "japanese": "一歩踏み込んで努力する、期待以上のことをする",
     "explanation": "Means to put in more effort than what is normally expected."
@@ -399,10 +399,10 @@
     "id": "034",
     "idiom": "Hang in There",
     "choices": [
-      "keep trying despite difficulties",
-      "stay calm and wait for things to improve"
+      "stay calm and wait for things to improve",
+      "keep trying despite difficulties"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "そこにぶら下がっていろ",
     "japanese": "頑張り続ける、諦めないで",
     "explanation": "Encourages someone to persist through a tough situation."
@@ -411,10 +411,10 @@
     "id": "035",
     "idiom": "Hit the Nail on the Head",
     "choices": [
-      "say or do exactly the right thing",
-      "solve a problem with a direct approach"
+      "solve a problem with a direct approach",
+      "say or do exactly the right thing"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "釘の頭を打つ",
     "japanese": "ずばり言い当てる、核心をつく",
     "explanation": "Means to describe something perfectly or identify the exact cause of a problem."
@@ -435,10 +435,10 @@
     "id": "037",
     "idiom": "Hit the Sack",
     "choices": [
-      "go to bed and sleep",
-      "stop working and take a rest"
+      "stop working and take a rest",
+      "go to bed and sleep"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "袋を叩く",
     "japanese": "寝る、就寝する",
     "explanation": "An informal way of saying it's time to go to sleep."
@@ -471,10 +471,10 @@
     "id": "040",
     "idiom": "Jump on the Bandwagon",
     "choices": [
-      "join a trend or activity because it is popular",
-      "take advantage of an opportunity quickly"
+      "take advantage of an opportunity quickly",
+      "join a trend or activity because it is popular"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "バンドワゴンに飛び乗る",
     "japanese": "流行に乗る、人気に便乗する",
     "explanation": "Means to follow a trend or join something simply because everyone else is doing it."
@@ -495,10 +495,10 @@
     "id": "042",
     "idiom": "Keep Your Head Above Water",
     "choices": [
-      "manage to survive a difficult situation",
-      "stay focused during a stressful time"
+      "stay focused during a stressful time",
+      "manage to survive a difficult situation"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "頭を水の上に保つ",
     "japanese": "なんとか持ちこたえる、溺れずに済む",
     "explanation": "Means to barely manage to cope with problems or financial difficulties."
@@ -531,10 +531,10 @@
     "id": "045",
     "idiom": "Look on the Bright Side",
     "choices": [
-      "focus on the positive aspects of a situation",
-      "remain hopeful that things will improve"
+      "remain hopeful that things will improve",
+      "focus on the positive aspects of a situation"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "明るい側を見る",
     "japanese": "物事の良い面を見る、前向きに考える",
     "explanation": "Encourages someone to think about the good things in a bad situation."
@@ -543,10 +543,10 @@
     "id": "046",
     "idiom": "Make Ends Meet",
     "choices": [
-      "have just enough money to pay for basic needs",
-      "manage to finish a project with limited resources"
+      "manage to finish a project with limited resources",
+      "have just enough money to pay for basic needs"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "両端を合わせる",
     "japanese": "なんとか生活費を賄う、収支を合わせる",
     "explanation": "Means to have barely enough money to cover all your expenses."
@@ -555,10 +555,10 @@
     "id": "047",
     "idiom": "Miss the Boat",
     "choices": [
-      "lose an opportunity by acting too late",
-      "fail to understand what is happening"
+      "fail to understand what is happening",
+      "lose an opportunity by acting too late"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "ボートを乗り逃す",
     "japanese": "チャンスを逃す、機を逸する",
     "explanation": "Means to miss a chance to do something because you were too slow."
@@ -579,10 +579,10 @@
     "id": "049",
     "idiom": "On the Same Page",
     "choices": [
-      "having the same understanding or agreement",
-      "working toward the same goal at the same time"
+      "working toward the same goal at the same time",
+      "having the same understanding or agreement"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "同じページにいる",
     "japanese": "同じ認識を持っている、意思が一致している",
     "explanation": "Means everyone involved has the same information and understanding."
@@ -591,10 +591,10 @@
     "id": "050",
     "idiom": "Once in a Blue Moon",
     "choices": [
-      "very rarely",
-      "at an unexpected and surprising moment"
+      "at an unexpected and surprising moment",
+      "very rarely"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "青い月に一度",
     "japanese": "めったにない、ごくたまに",
     "explanation": "Describes something that happens very infrequently."
@@ -627,10 +627,10 @@
     "id": "053",
     "idiom": "Pull Someone's Leg",
     "choices": [
-      "joke with or tease someone",
-      "pressure someone into doing something"
+      "pressure someone into doing something",
+      "joke with or tease someone"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "誰かの足を引っ張る",
     "japanese": "冗談を言う、からかう",
     "explanation": "Means to tell someone something untrue as a joke."
@@ -639,10 +639,10 @@
     "id": "054",
     "idiom": "Put All Your Eggs in One Basket",
     "choices": [
-      "rely on only one plan or option",
-      "invest all your energy in a single goal"
+      "invest all your energy in a single goal",
+      "rely on only one plan or option"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "一つのかごに全ての卵を入れる",
     "japanese": "一つのことだけに賭ける、リスクを分散しない",
     "explanation": "Warns against depending entirely on one option with no backup plan."
@@ -651,10 +651,10 @@
     "id": "055",
     "idiom": "Rule of Thumb",
     "choices": [
-      "a general guideline based on experience",
-      "the most reliable way to do something"
+      "the most reliable way to do something",
+      "a general guideline based on experience"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "親指のルール",
     "japanese": "経験則、おおよその基準",
     "explanation": "Refers to a practical principle based on experience rather than exact calculation."
@@ -675,10 +675,10 @@
     "id": "057",
     "idiom": "See Eye to Eye",
     "choices": [
-      "agree with someone on a topic",
-      "have an honest conversation with someone"
+      "have an honest conversation with someone",
+      "agree with someone on a topic"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "目と目が合う",
     "japanese": "意見が一致する、同じ考えを持つ",
     "explanation": "Means to have the same opinion or view as another person."
@@ -687,10 +687,10 @@
     "id": "058",
     "idiom": "Sit Tight",
     "choices": [
-      "wait patiently without doing anything",
-      "stay calm and avoid panicking"
+      "stay calm and avoid panicking",
+      "wait patiently without doing anything"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "きつく座る",
     "japanese": "じっと待つ、辛抱する",
     "explanation": "Means to stay where you are and wait calmly for something to happen."
@@ -699,10 +699,10 @@
     "id": "059",
     "idiom": "Speak of the Devil",
     "choices": [
-      "said when someone appears just as you were talking about them",
-      "said when a bad situation gets even worse"
+      "said when a bad situation gets even worse",
+      "said when someone appears just as you were talking about them"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "悪魔の話をする",
     "japanese": "うわさをすれば影、ちょうど話題にしていた人が現れる",
     "explanation": "An expression used when the person you were just discussing suddenly arrives."
@@ -711,10 +711,10 @@
     "id": "060",
     "idiom": "Spill the Beans",
     "choices": [
-      "reveal secret information",
-      "tell the whole truth about something"
+      "tell the whole truth about something",
+      "reveal secret information"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "豆をこぼす",
     "japanese": "秘密をしゃべる、うっかり打ち明ける",
     "explanation": "Means to accidentally or carelessly reveal information that was secret."
@@ -723,10 +723,10 @@
     "id": "061",
     "idiom": "Take It Easy",
     "choices": [
-      "relax and not work too hard",
-      "not worry too much about something"
+      "not worry too much about something",
+      "relax and not work too hard"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "簡単に取れ",
     "japanese": "ゆっくりする、のんびりする",
     "explanation": "Means to relax, rest, or avoid putting too much pressure on yourself."
@@ -747,10 +747,10 @@
     "id": "063",
     "idiom": "Take the Bull by the Horns",
     "choices": [
-      "deal with a difficult problem directly and confidently",
-      "face a dangerous situation without hesitation"
+      "face a dangerous situation without hesitation",
+      "deal with a difficult problem directly and confidently"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "雄牛の角をつかむ",
     "japanese": "困難に果敢に立ち向かう、積極的に問題に取り組む",
     "explanation": "Means to confront a challenging situation in a bold and direct way."
@@ -831,10 +831,10 @@
     "id": "070",
     "idiom": "Under the Weather",
     "choices": [
-      "feeling sick or unwell",
-      "feeling sad or emotionally low"
+      "feeling sad or emotionally low",
+      "feeling sick or unwell"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "天気の下に",
     "japanese": "体の具合が悪い、気分がすぐれない",
     "explanation": "Describes feeling physically ill or not in the best health."
@@ -879,10 +879,10 @@
     "id": "074",
     "idiom": "Word of Mouth",
     "choices": [
-      "information spread by people talking to each other",
-      "a recommendation given directly to one person"
+      "a recommendation given directly to one person",
+      "information spread by people talking to each other"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "口から出る言葉",
     "japanese": "口コミ、人から人への情報伝達",
     "explanation": "Refers to information or recommendations passed along through personal conversations."
@@ -903,10 +903,10 @@
     "id": "076",
     "idiom": "You Can Lead a Horse to Water",
     "choices": [
-      "you can give someone an opportunity but you can't force them to use it",
-      "you can guide someone but they may not follow your advice"
+      "you can guide someone but they may not follow your advice",
+      "you can give someone an opportunity but you can't force them to use it"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "馬を水辺に連れて行ける",
     "japanese": "機会を与えることはできても、本人にやる気がなければどうにもならない",
     "explanation": "Means you can provide the opportunity but cannot force someone to take advantage of it."
@@ -915,10 +915,10 @@
     "id": "077",
     "idiom": "Your Guess Is as Good as Mine",
     "choices": [
-      "I have no idea, just like you",
-      "we both have an equal chance of being right"
+      "we both have an equal chance of being right",
+      "I have no idea, just like you"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "あなたの推測は私のと同じくらい良い",
     "japanese": "私にもわからない、あなたと同様見当もつかない",
     "explanation": "Means the speaker doesn't know the answer any better than the person asking."
@@ -939,10 +939,10 @@
     "id": "079",
     "idiom": "A Blessing in Disguise",
     "choices": [
-      "something that seems bad but turns out good",
-      "something that seems good but turns out bad"
+      "something that seems good but turns out bad",
+      "something that seems bad but turns out good"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "変装した祝福",
     "japanese": "不幸に見えて実は幸運、禍転じて福となす",
     "explanation": "Refers to something that initially seemed unfortunate but resulted in something positive."
@@ -963,10 +963,10 @@
     "id": "081",
     "idiom": "A Long Shot",
     "choices": [
-      "something unlikely to succeed",
-      "a plan that will take a very long time"
+      "a plan that will take a very long time",
+      "something unlikely to succeed"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "長い撃ち",
     "japanese": "可能性が低いこと、見込みの薄い試み",
     "explanation": "Means an attempt that has a very low chance of success."
@@ -975,10 +975,10 @@
     "id": "082",
     "idiom": "A Rip-Off",
     "choices": [
-      "something that costs far more than it is worth",
-      "a product or service that fails to meet expectations"
+      "a product or service that fails to meet expectations",
+      "something that costs far more than it is worth"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "引き裂くもの",
     "japanese": "ぼったくり、不当に高い値段",
     "explanation": "Describes a purchase or deal where you paid far too much for what you received."
@@ -999,10 +999,10 @@
     "id": "084",
     "idiom": "Ahead of the Game",
     "choices": [
-      "in a better position than expected",
-      "being well prepared compared to others"
+      "being well prepared compared to others",
+      "in a better position than expected"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "ゲームの前にいる",
     "japanese": "有利な状況にある、先を行っている",
     "explanation": "Means to be well-prepared or more advanced than what is required."
@@ -1011,10 +1011,10 @@
     "id": "085",
     "idiom": "Back on Track",
     "choices": [
-      "returning to the right path after a problem",
-      "recovering after a personal setback"
+      "recovering after a personal setback",
+      "returning to the right path after a problem"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "軌道に戻る",
     "japanese": "軌道修正する、元の状態に戻る",
     "explanation": "Means to return to normal progress after a disruption."
@@ -1023,10 +1023,10 @@
     "id": "086",
     "idiom": "Behind the Scenes",
     "choices": [
-      "out of public view, working in the background",
-      "in a private way that avoids attention"
+      "in a private way that avoids attention",
+      "out of public view, working in the background"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "舞台の裏で",
     "japanese": "舞台裏で、表に出ずに",
     "explanation": "Refers to activity happening in the background, away from public view."
@@ -1047,10 +1047,10 @@
     "id": "088",
     "idiom": "Break Even",
     "choices": [
-      "have neither a profit nor a loss",
-      "recover the money you originally spent"
+      "recover the money you originally spent",
+      "have neither a profit nor a loss"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "均等に割る",
     "japanese": "収支がトントンになる、損益ゼロになる",
     "explanation": "Means to reach a point where income equals expenses, resulting in no gain or loss."
@@ -1059,10 +1059,10 @@
     "id": "089",
     "idiom": "Bring to Light",
     "choices": [
-      "reveal something that was hidden or unknown",
-      "explain something complicated in a clear way"
+      "explain something complicated in a clear way",
+      "reveal something that was hidden or unknown"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "光の下に持ってくる",
     "japanese": "明るみに出す、暴露する",
     "explanation": "Means to expose or make something previously unknown available to others."
@@ -1083,10 +1083,10 @@
     "id": "091",
     "idiom": "Call the Shots",
     "choices": [
-      "be in charge and make the decisions",
-      "help others make important decisions"
+      "help others make important decisions",
+      "be in charge and make the decisions"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "ショットを呼ぶ",
     "japanese": "仕切る、決定権を持つ",
     "explanation": "Means to be the person who has authority to make important decisions."
@@ -1095,10 +1095,10 @@
     "id": "092",
     "idiom": "Come Clean",
     "choices": [
-      "tell the truth after hiding something",
-      "apologize sincerely for a mistake"
+      "apologize sincerely for a mistake",
+      "tell the truth after hiding something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "きれいになって来る",
     "japanese": "白状する、正直に打ち明ける",
     "explanation": "Means to finally confess or tell the truth about something you had kept secret."
@@ -1107,10 +1107,10 @@
     "id": "093",
     "idiom": "Cross the Line",
     "choices": [
-      "go beyond what is acceptable or appropriate",
-      "break a rule that was clearly stated"
+      "break a rule that was clearly stated",
+      "go beyond what is acceptable or appropriate"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "線を越える",
     "japanese": "一線を越える、許容範囲を超えた行動をする",
     "explanation": "Means to behave in a way that exceeds the limits of what is acceptable."
@@ -1119,10 +1119,10 @@
     "id": "094",
     "idiom": "Cry Over Spilled Milk",
     "choices": [
-      "be upset about something that cannot be changed",
-      "make a big deal out of a small mistake"
+      "make a big deal out of a small mistake",
+      "be upset about something that cannot be changed"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "こぼれたミルクのために泣く",
     "japanese": "取り返しのつかないことを嘆く、後悔しても仕方がない",
     "explanation": "Means to feel sad or upset about something that has already happened and cannot be fixed."
@@ -1143,10 +1143,10 @@
     "id": "096",
     "idiom": "Easier Said Than Done",
     "choices": [
-      "something is much harder to do than it sounds",
-      "a task takes more time than people expect"
+      "a task takes more time than people expect",
+      "something is much harder to do than it sounds"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "言うは易く行うは難し",
     "japanese": "言うは易し行うは難し",
     "explanation": "Used to say that something sounds simple but is actually quite difficult in practice."
@@ -1155,10 +1155,10 @@
     "id": "097",
     "idiom": "Every Cloud Has a Silver Lining",
     "choices": [
-      "every bad situation has some positive aspect",
-      "things always improve if you wait long enough"
+      "things always improve if you wait long enough",
+      "every bad situation has some positive aspect"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "すべての雲には銀の縁がある",
     "japanese": "どんなことにも良い面がある、苦あれば楽あり",
     "explanation": "Encourages optimism by noting that even difficult situations have something good in them."
@@ -1167,10 +1167,10 @@
     "id": "098",
     "idiom": "Follow Through",
     "choices": [
-      "complete what you started or promised",
-      "continue doing something even when it gets difficult"
+      "continue doing something even when it gets difficult",
+      "complete what you started or promised"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "最後まで通り抜ける",
     "japanese": "やり遂げる、最後まで実行する",
     "explanation": "Means to complete an action or fulfill a commitment to the end."
@@ -1227,10 +1227,10 @@
     "id": "103",
     "idiom": "Go with the Flow",
     "choices": [
-      "accept what is happening and adapt naturally",
-      "ignore plans and act without thinking"
+      "ignore plans and act without thinking",
+      "accept what is happening and adapt naturally"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "流れに乗る",
     "japanese": "流れに身を任せる、自然の成り行きに従う",
     "explanation": "Means to accept a situation and adapt to it rather than fighting against it."
@@ -1251,10 +1251,10 @@
     "id": "105",
     "idiom": "Have a Change of Heart",
     "choices": [
-      "change your opinion or decision about something",
-      "become more sympathetic after thinking carefully"
+      "become more sympathetic after thinking carefully",
+      "change your opinion or decision about something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "心の変化を持つ",
     "japanese": "気が変わる、考えが変わる",
     "explanation": "Means to reverse your previous decision or change how you feel about something."
@@ -1275,10 +1275,10 @@
     "id": "107",
     "idiom": "Hit the Jackpot",
     "choices": [
-      "achieve great success or win something valuable",
-      "get extremely lucky in an unexpected situation"
+      "get extremely lucky in an unexpected situation",
+      "achieve great success or win something valuable"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "大当たりを引く",
     "japanese": "大当たりする、大成功を収める",
     "explanation": "Means to experience a great success or receive an unexpectedly large reward."
@@ -1299,10 +1299,10 @@
     "id": "109",
     "idiom": "In the Same Boat",
     "choices": [
-      "in the same difficult situation as others",
-      "facing the same challenge with the same resources"
+      "facing the same challenge with the same resources",
+      "in the same difficult situation as others"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "同じボートの中に",
     "japanese": "同じ立場にある、同じ困難を共有している",
     "explanation": "Means sharing the same problems or circumstances as others."
@@ -1383,10 +1383,10 @@
     "id": "116",
     "idiom": "Let Sleeping Dogs Lie",
     "choices": [
-      "avoid bringing up problems that have been forgotten",
-      "don't challenge someone who is already calm"
+      "don't challenge someone who is already calm",
+      "avoid bringing up problems that have been forgotten"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "眠っている犬をそのままにしておく",
     "japanese": "寝た子を起こすな、問題を蒸し返すな",
     "explanation": "Means to leave something alone that could cause trouble if brought up again."
@@ -1395,10 +1395,10 @@
     "id": "117",
     "idiom": "Make a Long Story Short",
     "choices": [
-      "give only the essential details to summarize something",
-      "skip over the unimportant parts of a story"
+      "skip over the unimportant parts of a story",
+      "give only the essential details to summarize something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "長い話を短くする",
     "japanese": "手短に言うと、かいつまんで言えば",
     "explanation": "Said when you want to summarize a complex story or situation briefly."
@@ -1443,10 +1443,10 @@
     "id": "121",
     "idiom": "No Strings Attached",
     "choices": [
-      "with no conditions or hidden obligations",
-      "without expecting anything in return"
+      "without expecting anything in return",
+      "with no conditions or hidden obligations"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "紐がついていない",
     "japanese": "条件なし、見返りを求めない",
     "explanation": "Means something is given or offered freely with no hidden requirements or commitments."
@@ -1455,10 +1455,10 @@
     "id": "122",
     "idiom": "Not Playing with a Full Deck",
     "choices": [
-      "not very intelligent or mentally sharp",
-      "unable to think clearly due to stress"
+      "unable to think clearly due to stress",
+      "not very intelligent or mentally sharp"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "フルデッキでプレイしていない",
     "japanese": "頭の回転が鈍い、少し変わっている",
     "explanation": "An informal way to say someone is not very smart or is acting foolishly."
@@ -1479,10 +1479,10 @@
     "id": "124",
     "idiom": "On Cloud Nine",
     "choices": [
-      "extremely happy and excited",
-      "in a daydream, not paying attention to reality"
+      "in a daydream, not paying attention to reality",
+      "extremely happy and excited"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "九番目の雲の上に",
     "japanese": "有頂天になっている、最高に幸せな状態",
     "explanation": "Describes a feeling of extreme happiness or joy."
@@ -1515,10 +1515,10 @@
     "id": "127",
     "idiom": "On Thin Ice",
     "choices": [
-      "in a risky situation where a mistake could cause trouble",
-      "doing something that most people would disagree with"
+      "doing something that most people would disagree with",
+      "in a risky situation where a mistake could cause trouble"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "薄い氷の上に",
     "japanese": "危険な状況にある、一歩間違えると大変なことになる",
     "explanation": "Means to be in a dangerous or delicate situation where any wrong move could cause problems."
@@ -1539,10 +1539,10 @@
     "id": "129",
     "idiom": "Out of Line",
     "choices": [
-      "behaving in an unacceptable or rude way",
-      "acting differently from what everyone else does"
+      "acting differently from what everyone else does",
+      "behaving in an unacceptable or rude way"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "線の外に",
     "japanese": "礼儀に反する、常識外れの行動をとる",
     "explanation": "Means to behave in a way that is considered improper or disrespectful."
@@ -1611,10 +1611,10 @@
     "id": "135",
     "idiom": "Read Between the Lines",
     "choices": [
-      "understand a hidden meaning beyond what is said",
-      "pay close attention to the exact words someone uses"
+      "pay close attention to the exact words someone uses",
+      "understand a hidden meaning beyond what is said"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "行間を読む",
     "japanese": "行間を読む、言外の意味をくみ取る",
     "explanation": "Means to look for a meaning that is implied but not directly stated."
@@ -1623,10 +1623,10 @@
     "id": "136",
     "idiom": "Ring a Bell",
     "choices": [
-      "sound familiar or remind you of something",
-      "draw someone's attention to something important"
+      "draw someone's attention to something important",
+      "sound familiar or remind you of something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "鐘を鳴らす",
     "japanese": "聞き覚えがある、思い当たる",
     "explanation": "Means that something sounds familiar or triggers a memory."
@@ -1635,10 +1635,10 @@
     "id": "137",
     "idiom": "Rock the Boat",
     "choices": [
-      "disturb a stable situation by causing trouble",
-      "take risks that put a shared effort in danger"
+      "take risks that put a shared effort in danger",
+      "disturb a stable situation by causing trouble"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "ボートを揺らす",
     "japanese": "波風を立てる、物事を混乱させる",
     "explanation": "Means to cause problems or create conflict in a situation that was previously stable."
@@ -1719,10 +1719,10 @@
     "id": "144",
     "idiom": "Stand Your Ground",
     "choices": [
-      "refuse to change your position despite pressure",
-      "defend yourself when someone challenges you"
+      "defend yourself when someone challenges you",
+      "refuse to change your position despite pressure"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "自分の地を守る",
     "japanese": "自分の立場を守る、主張を曲げない",
     "explanation": "Means to maintain your opinion or position even when others push back."
@@ -1743,10 +1743,10 @@
     "id": "146",
     "idiom": "Take a Rain Check",
     "choices": [
-      "decline now but suggest doing it another time",
-      "postpone something because of bad circumstances"
+      "postpone something because of bad circumstances",
+      "decline now but suggest doing it another time"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "雨のチェックを取る",
     "japanese": "今回は断るが今度誘ってほしい、後日にする",
     "explanation": "Means to politely refuse an invitation with the intention of accepting at a later time."
@@ -1767,10 +1767,10 @@
     "id": "148",
     "idiom": "The Best of Both Worlds",
     "choices": [
-      "enjoy the advantages of two different things at once",
-      "having to choose between two good things"
+      "having to choose between two good things",
+      "enjoy the advantages of two different things at once"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "両方の世界の最善",
     "japanese": "両方の良いところを得る、一石二鳥の状況",
     "explanation": "Describes a situation where you can enjoy all the benefits of two different things."
@@ -1779,10 +1779,10 @@
     "id": "149",
     "idiom": "The Elephant in the Room",
     "choices": [
-      "an obvious problem that nobody wants to talk about",
-      "an important issue that everyone is aware of but avoids"
+      "an important issue that everyone is aware of but avoids",
+      "an obvious problem that nobody wants to talk about"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "部屋の中の象",
     "japanese": "誰もが知っているのに口に出さない問題、触れにくい話題",
     "explanation": "Refers to a significant issue that is being deliberately ignored or avoided in conversation."
@@ -1815,10 +1815,10 @@
     "id": "152",
     "idiom": "Throw Someone Under the Bus",
     "choices": [
-      "betray someone to avoid blame yourself",
-      "criticize someone in front of others to gain advantage"
+      "criticize someone in front of others to gain advantage",
+      "betray someone to avoid blame yourself"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "誰かをバスの下に投げる",
     "japanese": "人を犠牲にして自分が助かる、責任を他人に押しつける",
     "explanation": "Means to place blame on someone else to protect yourself from consequences."
@@ -1827,10 +1827,10 @@
     "id": "153",
     "idiom": "Tie the Knot",
     "choices": [
-      "get married",
-      "make a serious long-term commitment"
+      "make a serious long-term commitment",
+      "get married"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "結び目を結ぶ",
     "japanese": "結婚する",
     "explanation": "An informal expression meaning to get married."
@@ -1839,10 +1839,10 @@
     "id": "154",
     "idiom": "Time Is Money",
     "choices": [
-      "wasting time is like wasting money",
-      "you must pay for every hour of work done"
+      "you must pay for every hour of work done",
+      "wasting time is like wasting money"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "時間はお金だ",
     "japanese": "時は金なり、時間を無駄にすることはお金を損すること",
     "explanation": "Means that time is a valuable resource and should not be wasted."
@@ -1863,10 +1863,10 @@
     "id": "156",
     "idiom": "Turn the Tables",
     "choices": [
-      "reverse a situation so the advantage shifts to you",
-      "change the topic when a conversation becomes uncomfortable"
+      "change the topic when a conversation becomes uncomfortable",
+      "reverse a situation so the advantage shifts to you"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "テーブルをひっくり返す",
     "japanese": "形勢を逆転させる、立場が逆になる",
     "explanation": "Means to reverse the situation so the person who was losing is now winning."
@@ -1875,10 +1875,10 @@
     "id": "157",
     "idiom": "Twist Someone's Arm",
     "choices": [
-      "pressure or persuade someone to do something they don't want to do",
-      "force someone to agree through threats"
+      "force someone to agree through threats",
+      "pressure or persuade someone to do something they don't want to do"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "誰かの腕をねじる",
     "japanese": "無理強いする、強引に説得する",
     "explanation": "Means to strongly persuade or pressure someone into doing something reluctantly."
@@ -1923,10 +1923,10 @@
     "id": "161",
     "idiom": "Wear Many Hats",
     "choices": [
-      "have many different roles or responsibilities",
-      "be able to adapt to many different situations"
+      "be able to adapt to many different situations",
+      "have many different roles or responsibilities"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "多くの帽子をかぶる",
     "japanese": "多くの役割を担う、様々な責任を持つ",
     "explanation": "Means to perform several different jobs or fill many different roles."
@@ -1935,10 +1935,10 @@
     "id": "162",
     "idiom": "Weather the Storm",
     "choices": [
-      "survive a difficult period without giving up",
-      "get through a crisis without losing what matters"
+      "get through a crisis without losing what matters",
+      "survive a difficult period without giving up"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "嵐を乗り切る",
     "japanese": "試練を乗り越える、困難な時期を耐え抜く",
     "explanation": "Means to endure and survive a difficult or challenging time."
@@ -1947,10 +1947,10 @@
     "id": "163",
     "idiom": "When Pigs Fly",
     "choices": [
-      "something will never happen",
-      "something will only happen under impossible conditions"
+      "something will only happen under impossible conditions",
+      "something will never happen"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "豚が空を飛ぶとき",
     "japanese": "絶対にありえない、そんなことは起こるわけがない",
     "explanation": "Used to say that something is completely impossible or will never occur."
@@ -1959,10 +1959,10 @@
     "id": "164",
     "idiom": "Worth Its Weight in Gold",
     "choices": [
-      "extremely valuable or useful",
-      "expensive but worth paying for"
+      "expensive but worth paying for",
+      "extremely valuable or useful"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "その重さと同じだけの金の価値がある",
     "japanese": "非常に価値がある、かけがえのない",
     "explanation": "Describes something or someone that is extremely valuable or beneficial."
@@ -1971,10 +1971,10 @@
     "id": "165",
     "idiom": "You Bet",
     "choices": [
-      "yes, definitely or of course",
-      "I'm confident that will happen"
+      "I'm confident that will happen",
+      "yes, definitely or of course"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "賭けてもいいよ",
     "japanese": "もちろん、その通り",
     "explanation": "An informal way to strongly agree or confirm something."
@@ -1995,10 +1995,10 @@
     "id": "167",
     "idiom": "You Get What You Pay For",
     "choices": [
-      "quality depends on how much you spend",
-      "cheap options are not always worth choosing"
+      "cheap options are not always worth choosing",
+      "quality depends on how much you spend"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "お金を払った分だけのものが手に入る",
     "japanese": "安かろう悪かろう、値段相応のものが手に入る",
     "explanation": "Means that cheaper things are often of lower quality than more expensive ones."
@@ -2007,10 +2007,10 @@
     "id": "168",
     "idiom": "Your Heart Is in the Right Place",
     "choices": [
-      "you have good intentions even if your actions are wrong",
-      "you care deeply about the people around you"
+      "you care deeply about the people around you",
+      "you have good intentions even if your actions are wrong"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "あなたの心は正しい場所にある",
     "japanese": "気持ちは正しい、悪気はない",
     "explanation": "Means someone has good intentions even though the result may not be what was hoped."
@@ -2067,10 +2067,10 @@
     "id": "173",
     "idiom": "At the End of the Day",
     "choices": [
-      "when everything is considered, ultimately",
-      "after all the work is done"
+      "after all the work is done",
+      "when everything is considered, ultimately"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "一日の終わりに",
     "japanese": "結局のところ、つまるところ",
     "explanation": "Means ultimately, when you consider everything, or in the final analysis."
@@ -2091,10 +2091,10 @@
     "id": "175",
     "idiom": "Bite Off More Than You Can Chew",
     "choices": [
-      "take on more responsibility than you can handle",
-      "make a commitment you cannot realistically keep"
+      "make a commitment you cannot realistically keep",
+      "take on more responsibility than you can handle"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "噛めないほど大きく噛む",
     "japanese": "手に余ることを引き受ける、身の丈以上のことをしようとする",
     "explanation": "Means to attempt or take on more than you are capable of handling."
@@ -2115,10 +2115,10 @@
     "id": "177",
     "idiom": "By the Skin of Your Teeth",
     "choices": [
-      "only just manage to do something, with almost no margin",
-      "succeed at the last possible moment"
+      "succeed at the last possible moment",
+      "only just manage to do something, with almost no margin"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "歯の皮一枚で",
     "japanese": "間一髪で、かろうじて",
     "explanation": "Means to barely avoid failure or danger by the smallest possible margin."
@@ -2127,10 +2127,10 @@
     "id": "178",
     "idiom": "Can't Put Your Finger on It",
     "choices": [
-      "unable to identify exactly what something is",
-      "unable to remember a specific detail"
+      "unable to remember a specific detail",
+      "unable to identify exactly what something is"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "それに指を当てられない",
     "japanese": "はっきりわからない、何か気になるが特定できない",
     "explanation": "Means you sense something is there but cannot precisely identify or describe it."
@@ -2151,10 +2151,10 @@
     "id": "180",
     "idiom": "Cry Wolf",
     "choices": [
-      "raise false alarms so often that people stop believing you",
-      "warn others about a danger they don't take seriously"
+      "warn others about a danger they don't take seriously",
+      "raise false alarms so often that people stop believing you"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "オオカミと叫ぶ",
     "japanese": "オオカミが来たと嘘をつく、嘘の警告を繰り返す",
     "explanation": "Means to repeatedly give false warnings until no one believes you when the real danger comes."
@@ -2175,10 +2175,10 @@
     "id": "182",
     "idiom": "Cut Someone Some Slack",
     "choices": [
-      "be less strict or critical toward someone",
-      "give someone more time to complete something"
+      "give someone more time to complete something",
+      "be less strict or critical toward someone"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "誰かにゆとりを切る",
     "japanese": "大目に見る、手加減する",
     "explanation": "Means to allow someone more freedom or be more forgiving of their mistakes."
@@ -2199,10 +2199,10 @@
     "id": "184",
     "idiom": "Don't Put All Your Eggs in One Basket",
     "choices": [
-      "don't depend on only one option or plan",
-      "spread your risks by trying several different approaches"
+      "spread your risks by trying several different approaches",
+      "don't depend on only one option or plan"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "全ての卵を一つのかごに入れるな",
     "japanese": "一か所に全てを賭けるな、リスクを分散させよ",
     "explanation": "Advises dividing your resources or efforts to avoid losing everything if one plan fails."
@@ -2211,10 +2211,10 @@
     "id": "185",
     "idiom": "Every Dog Has Its Day",
     "choices": [
-      "everyone will have a moment of success or luck",
-      "even the most unlikely person can succeed eventually"
+      "even the most unlikely person can succeed eventually",
+      "everyone will have a moment of success or luck"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "どの犬にもその日がある",
     "japanese": "誰にでも良い時がある、運はいつか向いてくる",
     "explanation": "Means everyone gets a chance to be successful or have good luck at some point."
@@ -2223,10 +2223,10 @@
     "id": "186",
     "idiom": "Go Back to the Drawing Board",
     "choices": [
-      "start the planning process over from scratch",
-      "review what went wrong before trying again"
+      "review what went wrong before trying again",
+      "start the planning process over from scratch"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "製図台に戻る",
     "japanese": "ゼロから計画し直す、最初からやり直す",
     "explanation": "Means to completely restart the planning or design process after something failed."
@@ -2235,10 +2235,10 @@
     "id": "187",
     "idiom": "Go Down in Flames",
     "choices": [
-      "fail spectacularly and completely",
-      "be heavily criticized and lose support"
+      "be heavily criticized and lose support",
+      "fail spectacularly and completely"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "炎の中に落ちる",
     "japanese": "派手に失敗する、惨敗する",
     "explanation": "Means to experience a dramatic and total failure."
@@ -2247,10 +2247,10 @@
     "id": "188",
     "idiom": "Hit Below the Belt",
     "choices": [
-      "do or say something that is unfair or cruel",
-      "attack someone when they are in a vulnerable position"
+      "attack someone when they are in a vulnerable position",
+      "do or say something that is unfair or cruel"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "ベルトの下を打つ",
     "japanese": "卑怯なことをする、反則技を使う",
     "explanation": "Means to use an unfair or cruel action that goes against the rules of fair behavior."
@@ -2259,10 +2259,10 @@
     "id": "189",
     "idiom": "If It Ain't Broke, Don't Fix It",
     "choices": [
-      "don't change something that is already working well",
-      "avoid making unnecessary improvements"
+      "avoid making unnecessary improvements",
+      "don't change something that is already working well"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "壊れていないなら直すな",
     "japanese": "問題がないなら手を加えるな、うまくいっているものは変えるな",
     "explanation": "Advises against changing something that is functioning well simply for the sake of change."
@@ -2295,10 +2295,10 @@
     "id": "192",
     "idiom": "Jump Through Hoops",
     "choices": [
-      "do many difficult or unnecessary things to achieve something",
-      "follow a complicated set of rules to complete a process"
+      "follow a complicated set of rules to complete a process",
+      "do many difficult or unnecessary things to achieve something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "輪を飛び越える",
     "japanese": "面倒な手順を踏む、無理難題をこなす",
     "explanation": "Means to go through a lot of trouble or follow many complicated steps to get something done."
@@ -2367,10 +2367,10 @@
     "id": "198",
     "idiom": "Put Two and Two Together",
     "choices": [
-      "figure out the truth by combining obvious clues",
-      "reach the most logical conclusion from given information"
+      "reach the most logical conclusion from given information",
+      "figure out the truth by combining obvious clues"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "二と二を合わせる",
     "japanese": "証拠を合わせて理解する、状況から察する",
     "explanation": "Means to reach an obvious conclusion by combining available pieces of information."
@@ -2403,10 +2403,10 @@
     "id": "201",
     "idiom": "The Bottom Line",
     "choices": [
-      "the most important point or final conclusion",
-      "the financial result of a business decision"
+      "the financial result of a business decision",
+      "the most important point or final conclusion"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "一番下の行",
     "japanese": "要するに、最も重要な点",
     "explanation": "Refers to the most essential fact or the final result of a situation."
@@ -2415,10 +2415,10 @@
     "id": "202",
     "idiom": "The Early Bird Catches the Worm",
     "choices": [
-      "those who start early have an advantage",
-      "being prepared leads to better results"
+      "being prepared leads to better results",
+      "those who start early have an advantage"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "早起きの鳥が虫を捕まえる",
     "japanese": "早起きは三文の得、先に行動した人が有利",
     "explanation": "Means that people who begin something early are more likely to succeed."
@@ -2451,10 +2451,10 @@
     "id": "205",
     "idiom": "The Writing on the Wall",
     "choices": [
-      "clear signs that something bad is going to happen",
-      "evidence that a situation is already beyond saving"
+      "evidence that a situation is already beyond saving",
+      "clear signs that something bad is going to happen"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "壁の文字",
     "japanese": "不吉な前兆、悪いことが起きる予感",
     "explanation": "Means there are obvious signs that something bad or undesirable is about to happen."
@@ -2463,10 +2463,10 @@
     "id": "206",
     "idiom": "There's No Point Crying Over Spilled Milk",
     "choices": [
-      "don't waste energy regretting what cannot be undone",
-      "small mistakes aren't worth getting upset about"
+      "small mistakes aren't worth getting upset about",
+      "don't waste energy regretting what cannot be undone"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "こぼれたミルクを泣いても仕方がない",
     "japanese": "後悔しても始まらない、覆水盆に返らず",
     "explanation": "Means there is no use being upset about something that has already happened and cannot be changed."
@@ -2487,10 +2487,10 @@
     "id": "208",
     "idiom": "Throw Cold Water on",
     "choices": [
-      "discourage or dampen enthusiasm for something",
-      "point out the flaws in someone's idea"
+      "point out the flaws in someone's idea",
+      "discourage or dampen enthusiasm for something"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "冷たい水をかける",
     "japanese": "水を差す、熱意をそぐ",
     "explanation": "Means to discourage or reduce enthusiasm for a plan or idea."
@@ -2511,10 +2511,10 @@
     "id": "210",
     "idiom": "To Be Honest",
     "choices": [
-      "used to introduce a sincere or blunt opinion",
-      "used to admit something you were not going to say"
+      "used to admit something you were not going to say",
+      "used to introduce a sincere or blunt opinion"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "正直に言うと",
     "japanese": "正直に言うと、本当のことを言えば",
     "explanation": "A phrase used to signal you are about to give your true or candid opinion."
@@ -2523,10 +2523,10 @@
     "id": "211",
     "idiom": "To Make a Long Story Short",
     "choices": [
-      "to summarize without going into all the details",
-      "to skip the unnecessary parts of a story"
+      "to skip the unnecessary parts of a story",
+      "to summarize without going into all the details"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "長い話を短くするために",
     "japanese": "手短に言えば、かいつまんで言うと",
     "explanation": "Said when you want to give a brief summary instead of a full explanation."
@@ -2535,10 +2535,10 @@
     "id": "212",
     "idiom": "To Say the Least",
     "choices": [
-      "used to suggest that the truth is actually stronger than stated",
-      "used to show you are being very careful with your words"
+      "used to show you are being very careful with your words",
+      "used to suggest that the truth is actually stronger than stated"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "少なくとも言えば",
     "japanese": "控えめに言っても、まだ言い足りないくらいだが",
     "explanation": "Used after a statement to suggest the reality is even more extreme than what was said."
@@ -2547,10 +2547,10 @@
     "id": "213",
     "idiom": "Turn Over a New Leaf",
     "choices": [
-      "change your behavior and start fresh",
-      "make a decision to leave a bad situation behind"
+      "make a decision to leave a bad situation behind",
+      "change your behavior and start fresh"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "新しいページをめくる",
     "japanese": "心を入れ替える、新たな出発をする",
     "explanation": "Means to make a fresh start and improve your behavior or way of life."
@@ -2559,10 +2559,10 @@
     "id": "214",
     "idiom": "Under the Table",
     "choices": [
-      "done secretly and illegally, often involving money",
-      "handled privately without involving others"
+      "handled privately without involving others",
+      "done secretly and illegally, often involving money"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "テーブルの下で",
     "japanese": "裏取引で、非公式に（違法な）やりとりをする",
     "explanation": "Refers to payments or dealings that are done secretly and dishonestly."
@@ -2619,10 +2619,10 @@
     "id": "219",
     "idiom": "What Goes Around Comes Around",
     "choices": [
-      "how you treat others will eventually come back to you",
-      "bad behavior always leads to bad consequences in the end"
+      "bad behavior always leads to bad consequences in the end",
+      "how you treat others will eventually come back to you"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "回り回ってまた戻ってくる",
     "japanese": "因果応報、まいた種は必ず戻ってくる",
     "explanation": "Means your actions, whether good or bad, will eventually return to affect you."
@@ -2631,10 +2631,10 @@
     "id": "220",
     "idiom": "When It Rains, It Pours",
     "choices": [
-      "when bad things happen, many tend to happen at once",
-      "once something starts, it is difficult to stop"
+      "once something starts, it is difficult to stop",
+      "when bad things happen, many tend to happen at once"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "雨が降るとき、どしゃ降りになる",
     "japanese": "泣きっ面に蜂、悪いことは重なるもの",
     "explanation": "Means that problems or events tend to come all at once rather than one at a time."
@@ -2679,10 +2679,10 @@
     "id": "224",
     "idiom": "You Only Live Once",
     "choices": [
-      "life is short, so take chances and enjoy it",
-      "make the most of every opportunity you are given"
+      "make the most of every opportunity you are given",
+      "life is short, so take chances and enjoy it"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "人生は一度きり",
     "japanese": "人生は一度だけ、思い切ってやれ",
     "explanation": "Encourages taking risks or trying new things because you only have one life to live."
@@ -2703,10 +2703,10 @@
     "id": "226",
     "idiom": "A Shot in the Dark",
     "choices": [
-      "a guess made with very little information",
-      "an attempt that has almost no chance of success"
+      "an attempt that has almost no chance of success",
+      "a guess made with very little information"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "暗闇の中の一発",
     "japanese": "当てずっぽう、根拠のない推測",
     "explanation": "Means a guess or attempt made without much information to guide it."
@@ -2727,10 +2727,10 @@
     "id": "228",
     "idiom": "At a Loss",
     "choices": [
-      "confused and not knowing what to do or say",
-      "unable to solve a problem despite trying hard"
+      "unable to solve a problem despite trying hard",
+      "confused and not knowing what to do or say"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "損失のところに",
     "japanese": "途方に暮れる、どうすればいいかわからない",
     "explanation": "Describes a state of total uncertainty about what to do or say next."
@@ -2739,10 +2739,10 @@
     "id": "229",
     "idiom": "At Your Fingertips",
     "choices": [
-      "easily and immediately available",
-      "within your ability to do or achieve"
+      "within your ability to do or achieve",
+      "easily and immediately available"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "指先に",
     "japanese": "すぐ手の届くところにある、いつでも使える",
     "explanation": "Means something is very easily accessible or available whenever you need it."
@@ -2787,10 +2787,10 @@
     "id": "233",
     "idiom": "Call It Even",
     "choices": [
-      "agree that nobody owes the other anything",
-      "decide a contest or situation is a tie"
+      "decide a contest or situation is a tie",
+      "agree that nobody owes the other anything"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "おあいこにする",
     "japanese": "貸し借りなしにする、引き分けにする",
     "explanation": "Means to consider a situation balanced with no debt or obligation remaining."
@@ -2799,10 +2799,10 @@
     "id": "234",
     "idiom": "Come Full Circle",
     "choices": [
-      "return to the original situation after many changes",
-      "finish something by returning to how it began"
+      "finish something by returning to how it began",
+      "return to the original situation after many changes"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "完全な円を描いて戻る",
     "japanese": "元の状態に戻る、一巡する",
     "explanation": "Means a situation has developed and returned to the same point where it started."
@@ -2811,10 +2811,10 @@
     "id": "235",
     "idiom": "Cut It Out",
     "choices": [
-      "stop doing something annoying or unacceptable",
-      "remove the unnecessary parts of something"
+      "remove the unnecessary parts of something",
+      "stop doing something annoying or unacceptable"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "それを切り取れ",
     "japanese": "やめろ、いい加減にしろ",
     "explanation": "An informal command to stop doing something that is bothering someone."
@@ -2847,10 +2847,10 @@
     "id": "238",
     "idiom": "Fall Through the Cracks",
     "choices": [
-      "be overlooked or missed when it shouldn't be",
-      "fail to be completed due to poor organization"
+      "fail to be completed due to poor organization",
+      "be overlooked or missed when it shouldn't be"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "割れ目から落ちる",
     "japanese": "見落とされる、すり抜けてしまう",
     "explanation": "Means something or someone is missed or ignored by a system that should have handled it."
@@ -2859,10 +2859,10 @@
     "id": "239",
     "idiom": "Get a Grip",
     "choices": [
-      "control your emotions and calm down",
-      "take responsibility and deal with a situation seriously"
+      "take responsibility and deal with a situation seriously",
+      "control your emotions and calm down"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "しっかり握れ",
     "japanese": "落ち着け、自分を取り戻せ",
     "explanation": "Means to take control of your emotions and stop overreacting."
@@ -2871,10 +2871,10 @@
     "id": "240",
     "idiom": "Get the Ball Rolling",
     "choices": [
-      "start a process or activity moving",
-      "take the first step in a long project"
+      "take the first step in a long project",
+      "start a process or activity moving"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "ボールを転がし始める",
     "japanese": "物事を始める、開始する",
     "explanation": "Means to initiate or begin a process so that progress can be made."
@@ -2919,10 +2919,10 @@
     "id": "244",
     "idiom": "Hold the Line",
     "choices": [
-      "maintain your current position and not give in",
-      "keep things from getting worse while waiting for help"
+      "keep things from getting worse while waiting for help",
+      "maintain your current position and not give in"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "ラインを保持する",
     "japanese": "現状を維持する、立場を守る",
     "explanation": "Means to maintain a position, standard, or level without backing down."
@@ -2955,10 +2955,10 @@
     "id": "247",
     "idiom": "Keep It Up",
     "choices": [
-      "continue doing what you are doing well",
-      "don't stop making progress toward your goal"
+      "don't stop making progress toward your goal",
+      "continue doing what you are doing well"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "それを上に保て",
     "japanese": "その調子で続けて、頑張って",
     "explanation": "Encouragement to continue with something you are doing successfully."
@@ -2967,10 +2967,10 @@
     "id": "248",
     "idiom": "Let It Slide",
     "choices": [
-      "choose not to react to something you noticed",
-      "forgive someone for something and move on"
+      "forgive someone for something and move on",
+      "choose not to react to something you noticed"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "それを滑らせる",
     "japanese": "大目に見る、見て見ぬふりをする",
     "explanation": "Means to ignore something or decide not to respond to it."
@@ -2991,10 +2991,10 @@
     "id": "250",
     "idiom": "Take It or Leave It",
     "choices": [
-      "accept the offer as it is or don't take it at all",
-      "decide now whether you want it or not"
+      "decide now whether you want it or not",
+      "accept the offer as it is or don't take it at all"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "literal": "取るか取らないか",
     "japanese": "受け入れるかどうかは相手次第、これ以上は譲れない",
     "explanation": "Means the offer is final and the other person must either accept it completely or refuse it."
